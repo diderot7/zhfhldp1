@@ -49,8 +49,7 @@ apt_requirements=[
     'libapache2-mod-wsgi-py3',
     'python3-setuptools',
     'libssl-dev',
-    'libffi-dev'
-]
+    'libffi-dev']
 
 '''
 작성이 모두 끝난 후 
@@ -71,7 +70,7 @@ def _setup():
 def _init_apt():
     yn = input('ubuntu linux update ok?: [y/n]')
     if yn == 'y':  
-       sudo('apt-get update && apt-get -y upgrade ')
+       sudo('apt-get update && apt-get -y upgrade')
 
 
 def _install_apt_packages( requires ):
